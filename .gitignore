@@ -1,0 +1,27 @@
+# Personal runtime and secrets
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+state.db*
+*.sqlite*
+*.db-wal
+*.db-shm
+auth.json
+config.yaml
+policy.json
+secrets/
+credentials/
+backups/
+diagnostics/
+*.log
+*.log.*
+*.zip
+*.tar.gz
+# Editors
+.idea/
+.vscode/

@@ -1,0 +1,11 @@
+{
+  "warn_percent": 75.0,
+  "critical_percent": 85.0,
+  "emergency_percent": 90.0,
+  "verify_seconds": 25,
+  "min_idle_seconds": 90,
+  "cooldown_seconds": 600,
+  "max_recoveries_per_hour": 2,
+  "auto_interrupt": false,
+  "auto_continue": false
+}
