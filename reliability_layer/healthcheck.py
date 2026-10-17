@@ -197,7 +197,7 @@ def evaluate(home: Path, repo: Path, hours: int) -> dict:
     pmset = command(["pmset", "-g", "assertions"])
     checks["power"] = {"amphetaminesleep_assertion_seen": "Amphetamine" in pmset and "PreventUserIdleSystemSleep" in pmset,
                         "status": "Not enough to prove lid-close immunity; test after reboot while safely ventilated"}
-    reference = repo / "monitor/desktop-guard-v2.2/desktop_guard_v22.py"
+    reference = repo / "monitor/desktop_guard.py"
     expected = sha(reference.read_bytes()) if reference.is_file() else ""
     checks["guard"] = guard_health(home, expected)
     checks["compression"] = compression_metrics(home / ".hermes/logs", datetime.now() - timedelta(hours=hours))
