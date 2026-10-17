@@ -1,9 +1,5 @@
-# Third-party code and attribution
+# Third-party notices
 
-Original project: **NousResearch/hermes-agent**  
-Source: https://github.com/NousResearch/hermes-agent  
-Upstream license: MIT (see the upstream `LICENSE` file for the full authoritative text).
+[Hermes Agent](https://github.com/NousResearch/hermes-agent) is an independent upstream project; this repository is not affiliated with its maintainers. The runtime patcher recognizes a small upstream helper in order to make a targeted local source change. The fixture in `reliability_layer/rearm.py` reflects the upstream function shape for compatibility tests. The Hermes Agent license and copyright notices remain with that upstream project.
 
-Some patch packages contain whole Hermes source files modified from the v0.21.7 revision (`71d34bad1045`), plus unmodified baseline fixtures for installer and regression tests. These upstream-derived files retain upstream licensing requirements. This archive does **not** claim exclusive authorship of the original Hermes code.
-
-Other scripts in this repository are historical local operational and diagnostic utilities. The original distribution ZIP name and per-file SHA256 are preserved in `docs/SOURCE_MANIFEST.json`, so you can identify the exact inputs used to build this repository. No independent license is imposed on upstream-derived files here; consult the owner before public redistribution.
+This distribution does not bundle the Hermes Agent application, full upstream Python modules, or local session data.
